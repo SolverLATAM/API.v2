@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "f6c45219-c257-4d5f-ab55-f71a525cfbb9",
+		"name": "farmAppFarms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST farm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Code\": \"002\",\r\n    \"Description\": \"description\",\r\n    \"DescriptionPowerBi\":\"descriptionBI\",\r\n    \"EntityMemberId\":1,\r\n    \"CreatedBy\":\"creator\",\r\n    \"CreatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"UpdatedBy\":\"creator\",\r\n    \"UpdatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"Source\":\"thesource\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/farms/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"farms",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET farms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/farms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"farms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE farm",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/farms/delete/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"farms",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT farm",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Code\": \"002\",\r\n    \"Description\": \"descriptionUptated\",\r\n    \"DescriptionPowerBi\":\"descriptionBIUpdated\",\r\n    \"EntityMemberId\":1,\r\n    \"CreatedBy\":\"creator\",\r\n    \"CreatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"UpdatedBy\":\"creatorUpdated\",\r\n    \"UpdatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"Source\":\"thesource\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/farms/update/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"farms",
+						"update",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

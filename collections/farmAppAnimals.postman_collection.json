@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "e4fb8e4a-27a3-4723-9785-541f9aaf2dd5",
+		"name": "farmAppAnimals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET animals",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/animals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST animal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BirthDate\":\"'20120618 10:34:09 AM'\",\r\n    \"SaleDate\":\"'20120618 10:34:09 AM'\",\r\n    \"Breed\":null,\r\n    \"NickName\":\"vacanueva5\",\r\n    \"AnimalId\":null,\r\n    \"FarmMemberId\":2,\r\n    \"IsFemale\":null,\r\n    \"MadreMemberId\":null,\r\n    \"Active\":null,\r\n    \"Birthweight\":null,\r\n    \"CreatedBy\":null,\r\n    \"CreatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"UpdatedBy\":null,\r\n    \"UpdatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"Source\":null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/animals/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE animal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/animals/delete/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						"delete",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET animals from farm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/animals/farm/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						"farm",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT farm",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BirthDate\":null,\r\n    \"SaleDate\":null,\r\n    \"Breed\":null,\r\n    \"NickName\":\"NOMBRE\",\r\n    \"AnimalId\":null,\r\n    \"FarmMemberId\":1,\r\n    \"IsFemale\":null,\r\n    \"MadreMemberId\":null,\r\n    \"Active\":null,\r\n    \"Birthweight\":null,\r\n    \"CreatedBy\":null,\r\n    \"CreatedOn\":null,\r\n    \"UpdatedBy\":null,\r\n    \"UpdatedOn\":null,\r\n    \"Source\":null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/animals/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

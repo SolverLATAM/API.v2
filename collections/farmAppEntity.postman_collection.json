@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "40465c1c-ffb3-40b3-a847-81e270de3418",
+		"name": "farmAppEntity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Entities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/entity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entity"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

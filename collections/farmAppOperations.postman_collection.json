@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "86eb9319-9d44-4f4b-9dd2-f61dfe6e3027",
+		"name": "farmAppOperations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST operation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TransactionId\": \"071\",\r\n    \"AccountMemberId\": 1,\r\n    \"AnimalMemberId\":1,\r\n    \"Value1\":1,\r\n    \"Value2\":2,\r\n    \"Value3\":3,\r\n    \"TimePeriod\":20180105,\r\n    \"CreatedBy\":\"creator\",\r\n    \"CreatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"UpdatedBy\":\"creator\",\r\n    \"UpdatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"Source\":\"thesource\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/operations/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"operations",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET operations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/operations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"operations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE operation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/operations/delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"operations",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT operation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TransactionId\": \"071\",\r\n    \"AccountMemberId\": 1,\r\n    \"AnimalMemberId\":1,\r\n    \"Value1\":1,\r\n    \"Value2\":2,\r\n    \"Value3\":3,\r\n    \"TimePeriod\":20180105,\r\n    \"CreatedBy\":\"creatorUpdated\",\r\n    \"CreatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"UpdatedBy\":\"creatorUpdated\",\r\n    \"UpdatedOn\":\"'20120618 10:34:09 AM'\",\r\n    \"Source\":\"thesourceUpdated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/operations/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"operations",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
